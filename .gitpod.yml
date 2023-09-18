@@ -1,7 +1,0 @@
-image:
-  file: .gitpod.Dockerfile
-
-tasks:
-  - name: Initialize
-    init: pip install -r requirements.txt
-    command: jupyter notebook
