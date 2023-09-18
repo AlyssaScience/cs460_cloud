@@ -1,5 +1,5 @@
 image:
-  file: Dockerfile
+  file: .gitpod.Dockerfile
 
 # Expose the port for Jupyter Notebook and open a preview when it's ready
 ports:
