@@ -1,7 +1,10 @@
 image:
   file: Dockerfile
 
-# Expose the ports for Jupyter and Flask, and open previews when they're ready
+tasks:
+  - init: echo "Maybe some initial build commands here."
+    command: python app.py
+
 ports:
   - port: 8888
     onOpen: open-preview
