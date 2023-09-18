@@ -1,7 +1,9 @@
 image:
   file: Dockerfile
 
-# Expose the port for Jupyter Notebook and open a preview when it's ready
+# Expose the ports for Jupyter and Flask, and open previews when they're ready
 ports:
   - port: 8888
+    onOpen: open-preview
+  - port: 5000
     onOpen: open-preview
