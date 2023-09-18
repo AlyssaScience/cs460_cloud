@@ -1,12 +1,7 @@
 image:
-  file: Dockerfile
+  file: .gitpod.Dockerfile
 
-tasks:
-  - init: echo "Maybe some initial build commands here."
-    command: python app.py
-
-ports:
-  - port: 8888
-    onOpen: open-preview
-  - port: 5000
-    onOpen: open-preview
+#tasks:
+#  - name: Initialize
+#    init: pip install -r requirements.txt
+#    command: jupyter notebook
