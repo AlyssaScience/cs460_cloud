@@ -1,7 +1,7 @@
 image:
-  file: .gitpod.Dockerfile
+  file: Dockerfile
 
-tasks:
-  - name: Initialize
-    init: pip install -r requirements.txt
-    command: jupyter notebook
+# Expose the port for Jupyter Notebook and open a preview when it's ready
+ports:
+  - port: 8888
+    onOpen: open-preview
