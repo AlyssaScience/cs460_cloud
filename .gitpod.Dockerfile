@@ -11,7 +11,7 @@ RUN pip install Flask pandas folium requests
 COPY . /app
 
 # Make port 8888 available to the world outside this container
-EXPOSE 8888
+EXPOSE 8888 5000
 
 # Run your custom script when the container launches
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
